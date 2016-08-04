@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Technology - BBC NEWS</title>
+        
+        <style type="text/css"> 
+        
+            #topbar { 
+                width: 1000px;
+                margin: 0 auto;
+                height: 40px;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+
+            }
+            
+            #logo {
+                margin-top: 8px;
+                width: 100px;
+                float: left;
+                margin-right: 8px;
+            }
+            
+            .topbar-section {
+                float: left;
+                border-left: 1px #CCCCCC solid;
+                height: 100%;
+            }
+            
+            #signin-image {
+                width: 25px;
+                margin: 11px 15px;
+                float: left;
+            }
+            
+            #signin-text {
+                font-weight: bold;
+                font-size: 90%;
+                position: relative;
+                top: 14px;
+                padding-right: 50px;
+            }
+            
+            .topbar-menu {
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 5px 15px;
+                height: 20px;
+            }
+            
+            #more-arrow {
+                width: 10px;
+                margin-left: 15px;
+                margin-bottom: 3px;
+            }
+            
+            #search-box {
+                background-color: #E4E4E4;
+                border: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 4px;
+                margin: 7px 0 7px 7px;
+                float: left;
+            }
+            
+            #search-image {
+                height: 25px;
+                width: 25x;
+                float: left;
+                margin-top: 7px;
+                    
+            }
+            
+            .clear {
+                clear: both;
+            }
+            
+            #menu-bar-container {
+                border-top: 1px #CCCCCC solid;
+                background-color: #BB1919;
+                width: 100%;
+                height: 70px;
+            }
+            
+            #menu-bar {
+                width: 1000px;
+                margin: 0 auto;
+            }
+            
+            h1 {
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+                float: left;
+            }
+            
+            #menu-bar-2-container {
+                background-color: #A91717;
+                width: 100%;
+            }
+            
+            #menu-bar-2 {
+                width: 1000px;
+                margin: 0 auto;
+                height: 40px;
+            }
+            
+            #menu-bar-2 a {
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                border-right: 1px #BB4545 solid;
+                font-size: 15px;
+                position: relative;
+                top: 10px;
+            }
+            
+            #menu-bar-2 a:hover {
+                text-decoration: underline;
+            }
+            
+            .no-border {
+                border: none !important; 
+            }
+            
+            #down-arrow {
+                height: 10px;
+                position: relative;
+                top: 10px;
+                margin-left: 1px;
+            }
+            
+            #page-container {
+                width: 1000px;
+                margin: 0 auto;
+            }
+            
+            h2 {
+                font-weight: normal;
+                margin-top: 40px;
+                font-size: 20px;
+                border-bottom: 2px #BB1919 solid;
+                width: 105px;
+            }
+            
+            h3 a {
+                color: black;
+                font-size: 30px;
+                text-decoration: none; 
+            }
+            
+            h3 a:hover {
+                color: #1167A8;
+            }
+            
+            #article-summary {
+                color: #5A5A5A;
+                width: 250px;
+                float: left;
+            }
+            
+            .clock {
+                height: 15px;
+                position: relative;
+                top: 2px;
+            }
+            
+            #topic-link {
+                text-decoration: none;
+                color: #A91717;
+                border-left: 1px #CCCCCC solid;
+                padding-left: 10px;
+            }
+            
+            #article-summary a:hover {
+                color: #1167A8;
+            }
+            
+            .date {
+                padding-right: 10px;
+                color: #5A5A5A;
+            }
+            
+            .article-container {
+                float: left;
+                width: 670px;
+                border-right: 1px #CCCCCC solid;
+                padding: 20px;
+            }
+            
+            #main-image {
+                width: 380px;
+                height: 250px;
+            }
+            
+            #ad-image {
+                width: 300px;
+                height: 250px;
+                float: right;
+            }
+            #article-hr {
+                color: 1px #A91717 solid;
+                width: 50px; 
+            }
+            
+            .article-link {
+                color: black;
+                text-decoration: none;
+            }
+            
+            #watch-listen {
+                margin-left: 20px;
+                width: 280px;
+               float: right;
+                
+            }
+            
+            h4 {
+                font-weight: normal;
+                font-size: 20px;
+            }
+            
+            .article-side-image {
+                float: left;
+                width: 90px;
+                margin-right: 10px;
+            }
+            
+            .watch-listen-link {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            
+            .watch-listen-link:hover {
+                color: #1167A8;
+            }
+            
+            .side-article {
+                float: right;
+                width: 180px;
+                position: relative;
+                top: -18px;
+            }
+            
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <div id="topbar">
+            
+            <img id="logo" src="images/bbclogo.png">
+            
+            <div id="singin-div" class="topbar-section">
+            
+                <img id="signin-image" src="images/signinimage.png">
+                
+                <span id="signin-text">Sign in</span>
+                
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                News
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                Sport
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                Weather
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                Shop
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                Earth
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                Travel
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                More
+                
+                <img id="more-arrow" src="images/more-arrow.png">
+            
+            </div>
+            
+            <div class="topbar-section">
+            
+                <input id="search-box" type="text" value="Search">
+                
+                <input type="image" id="search-image" src="images/searchimage.png">
+            
+            </div>
+        
+        </div>
+            
+        <div class="clear"></div>
+            
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+                
+                <h1>NEWS</h1>
+                
+            </div>
+            
+        
+            <div class="clear"></div>
+            
+            <div id="menu-bar-2-container">
+            
+                <div id="menu-bar-2">
+                
+                    <a href="">Home</a>
+                    
+                    <a href="">Video</a>
+                    
+                    <a href="">World</a>
+                    
+                    <a href="">US & Canada</a>
+
+                    <a href="">UK</a>
+
+                    <a href="">Business</a> 
+                    
+                    <a href="">Tech</a>
+                    
+                    <a href="">Science</a>
+                    
+                    <a href="">magazine</a>
+                    
+                    <a href="">Entertainment & Arts</a>
+                    
+                    <a href="">Heatlth</a>
+                    
+                    <a class="no-border" href="">More</a>
+                    
+                    <img  id="down-arrow" src="images/down-arrow.png">
+                    
+                </div>
+            
+            </div>
+    
+        </div>   
+    
+    <div class="clear"></div>
+    
+    <div id="page-container">
+
+    
+        <div id="main-article">
+        
+            <h2>Technology</h2>
+            
+            <div id="article-container">
+    
+                <h3><a href="">HP apologises after $2 laptop error</a></h3>
+            
+                <div id="article-summary">
+                
+                    <p>HP apologises after an error on its website lets shoppers buy expensive laptop computers for less than &pound;2.</p>
+
+                    <p><img class="clock" src="images/clock.png"> <span class="date">1 August 2016</span>  <a id="topic-link" href="">Technology</a></p>
+                
+                    <hr id="article-hr" align="left">
+
+                    <p><a class="article-link" href="">HP phone thinks it's a Windows PC</a></p>
+                
+                </div>
+                
+                <img id="main-image" src="images/articleimage.png">
+                
+                <img id="ad-image" src="images/ad.png">
+                
+            </div>
+    
+        </div>
+
+        <div id="watch-listen">
+            
+            <h4>Watch/Listen</h4>
+            
+            <img class="article-side-image" src="images/article1.png">
+            
+            <div class="side-article">
+                
+                <p><a class="watch-listen-link" href="">'Spider' could keep an airship aloft</a></p>
+
+                <p><p><img class="clock" src="images/clock.png"> <span class="date">1 August 2016</span>  <a id="topic-link" href="">Technology</a></p></p>
+            
+            </div>
+        
+        <div class="clear"></div>
+        
+            <img class="article-side-image" src="images/articel2.png">
+            
+            <div class="side-article">
+                
+                <p><a class="watch-listen-link" href="">What is Geocaching?</a></p>
+
+                <p><p><img class="clock" src="images/clock.png"> <span class="date">1 August 2016</span>  <a id="topic-link" href="">Technology</a></p></p>
+            
+            </div>
+        
+        <div class="clear"></div>
+        
+           <img class="article-side-image" src="images/articel2.png">
+            
+            <div class="side-article">
+                
+                <p><a class="watch-listen-link" href="">Pokemon Go 'transformed teenager's life'</a></p>
+
+                <p><p><img class="clock" src="images/clock.png"> <span class="date">1 August 2016</span>  <a id="topic-link" href="">UK</a></p></p>
+
+            </div>
+    
+        </div>
+
+    </div>
+    
+    </body>
+
+</html>
